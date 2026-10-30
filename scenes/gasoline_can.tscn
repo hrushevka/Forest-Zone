@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cly2wv03kic75"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_ppsdk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4rpmk"]
+albedo_color = Color(0.644, 0.11, 1, 1)
+
+[node name="RigidBody3D" type="RigidBody3D" groups=["interactable"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_ppsdk")
+
+[node name="CSGBox3D" type="CSGSphere3D" parent="."]
+material = SubResource("StandardMaterial3D_4rpmk")
